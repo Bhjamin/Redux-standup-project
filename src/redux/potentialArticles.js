@@ -22,6 +22,9 @@ export const potentialArticleSlice = createSlice({
 
 export const {setPotentialArticles, deletePotentialArticles} = potentialArticleSlice.actions
 
-export const selectPotentials = (state) => state.potentialArticles.value
+export const selectPotentials = (state) => {
+
+return    state.potentialArticles.value
+}
 
 export default potentialArticleSlice.reducer

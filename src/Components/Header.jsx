@@ -15,7 +15,7 @@ const Header = () => {
     const searchHandler = (e) => {
         e.preventDefault()
         axios.get(`https://newsapi.org/v2/everything?apiKey=${REACT_APP_API_KEY}&q=${input}&language=en`)
-        .them(res => {
+        .then(res => {
             console.log(res.data)
             disptch(setPotentialArticles(res.data.articles))
         })

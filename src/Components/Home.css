@@ -1,0 +1,10 @@
+.article-Container {
+ width: 400px;
+ height: 400px;
+ margin: 25px;
+}
+
+.article-Container img {
+    height: 40%;
+    width: 40%;
+}
