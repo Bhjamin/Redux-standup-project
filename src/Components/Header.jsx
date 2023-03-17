@@ -23,14 +23,14 @@ const Header = () => {
     }
 
     return(
-        <div>
+        <div className="flex justify-between">
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/details'>Details</NavLink>
 
 
             <form onSubmit={e => searchHandler(e)}>
                 <input placeholder="Search the news for something" onChange={e => setInput(e.target.value)} />
-                <button>Search</button>
+                <button className="btn" >Search</button>
             </form>
 
         </div>
